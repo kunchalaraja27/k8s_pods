@@ -19,10 +19,12 @@ metadata:
     name: raja
 spec: 
   containers: 
-  - name: nginx 
+  - name: first
     image: nginx
     env:
       - name: myname
         value: raja
       - name: City
         value: Hyderabad
+  - name: second 
+    image: nginx
