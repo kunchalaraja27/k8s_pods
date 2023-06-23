@@ -27,4 +27,4 @@ spec:
       - name: City
         value: Hyderabad
   - name: second 
-    image: nginx
+    image: nginx:latest
