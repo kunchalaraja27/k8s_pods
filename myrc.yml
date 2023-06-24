@@ -2,21 +2,19 @@ apiVersion: v1
 kind: ReplicationController
 metadata:
   name: first-rc
-  labels:
-    appname: testapp
 
 spec:
   replicas: 5
   selector:           
-    env: prod          
+    app: nginx          
   template:
     metadata: 
       name: firstpod
       labels:
-        env: prod
+        app: nginx 
     spec: 
       containers: 
       - name: first-container 
         image: nginx
-        env:
-          - name: raja
+        ports:
+          - containerPort: 80
