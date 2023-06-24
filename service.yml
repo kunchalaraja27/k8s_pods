@@ -1,15 +1,13 @@
+Service.yml
 apiVersion: v1
 kind: Service
 metadata:
   name: firstservice
-  labels:
-     app: nginx
 spec:
   type: NodePort
   ports:
-    - nodePort: 30001
-      protcol: Tcp
+    - nodePort: 31000
+      port: 9000
       targetPort: 80
   selector:
-    app: nginx
-    type: app
+    env: prod
