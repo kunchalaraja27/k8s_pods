@@ -5,8 +5,8 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - nodePort: 32000
-      port: 9000
+    - nodePort: 30001
+      port: 8000
       targetPort: 80
   selector:
     type: app
