@@ -6,7 +6,8 @@ metadata:
 spec:
   replicas: 5
   selector:           
-    app: nginx          
+    app: nginx
+    type: app         
   template:
     metadata: 
       name: firstpod
